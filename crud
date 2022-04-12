@@ -1,0 +1,65 @@
+//CRUD
+	//===========
+	//CREATE
+	//===========
+	//book := book.Book{}
+	//book.Title = "Analisa teknikal trading forex"
+	//book.Price = 76000
+	//book.Rating = 5
+	//book.Discount = 16
+	//book.Description = "Kupas tuntas analisa chart dengan pendekatan tools teknikal"
+	//err = db.Create(&book).Error
+	//if err != nil {
+	//	fmt.Println("==================")
+	//	fmt.Println("Error creating book record")
+	//	fmt.Println("==================")
+	//}
+	//query banyak
+	//var books []book.Book
+	//
+	//err = db.Debug().Where("rating=?", 5).Find(&books).Error
+	//if err != nil {
+	//	fmt.Println("==================")
+	//	fmt.Println("Error finding book record")
+	//	fmt.Println("==================")
+	//}
+	//for _, b := range books {
+	//	fmt.Println("Title :", b.Title)
+	//	fmt.Println("book object %v", b)
+	//}
+	//=======
+	//update
+	//=======
+	//var book book.Book
+	//
+	//err = db.Debug().Where("id=?", 1).First(&book).Error
+	//if err != nil {
+	//	fmt.Println("==================")
+	//	fmt.Println("Error finding book record")
+	//	fmt.Println("==================")
+	//}
+	//book.Title = "Man Tiger (revision 2)"
+	//err = db.Save(&book).Error
+	//if err != nil {
+	//	fmt.Println("==================")
+	//	fmt.Println("Error updating book record")
+	//	fmt.Println("==================")
+	//}
+	//==========
+	//DELETE
+	//==========
+	//var book book.Book
+	//
+	//err = db.Debug().Where("id=?", 3).First(&book).Error
+	//if err != nil {
+	//	fmt.Println("==================")
+	//	fmt.Println("Error finding book record")
+	//	fmt.Println("==================")
+	//}
+	//book.Title = "Man Tiger (revision 2)"
+	//err = db.Delete(&book).Error
+	//if err != nil {
+	//	fmt.Println("==================")
+	//	fmt.Println("Error deleting book record")
+	//	fmt.Println("==================")
+	//}
