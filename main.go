@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
@@ -11,10 +12,11 @@ import (
 
 func main() {
 	dsn := "phpmyadmin:inifgrup@tcp(103.16.133.234:3306)/khairon?charset=utf8mb4&parseTime=True&loc=Local"
-	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
+	var db, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {
 		log.Fatal("DB connection error")
 	}
+	fmt.Println("Sukses Konek ke DB")
 	db.AutoMigrate(book.Book{})
 	//===============
 	//CREATE
